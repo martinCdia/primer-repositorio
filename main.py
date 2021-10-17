@@ -20,6 +20,8 @@ class Empleado:
     def Impuestos(self):
       if self.sueldo > 3000:
         print("El empleado " + self.nombreEmpleado + " tiene un sueldo mayor a $ 3000.00, por lo tanto debe pagar impuesto.")
+      elif self.sueldo == 3000:
+        print("El empleado " + self.nombreEmpleado + " tiene un sueldo igual a $ 3000.00, por lo tanto NO debe pagar impuesto.")
       else:
         print("El empleado " + self.nombreEmpleado + " tiene un sueldo menor a $ 3000.00, por lo tanto NO debe pagar impuesto.")
   
